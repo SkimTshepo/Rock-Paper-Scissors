@@ -32,10 +32,12 @@ function autoPlay(){
       playGame(playerMove);
     }, 1000);
     isAutoPlay = true;
-
+    document.querySelector('.js-auto-play').innerHTML ='Stop Auto Play';
   } else {
     clearInterval(intervalId);
     isAutoPlay = false;
+
+    document.querySelector('.js-auto-play').innerHTML ='Auto Play';
   }
 
   
